@@ -1,0 +1,171 @@
+@import url(//db.onlinewebfonts.com/c/031da03967812d134ed68febd3ba78a9?family=GT+America);
+
+.App {
+  box-sizing: border-box;
+  font-family: GT America;
+  display: flex;
+  text-align: justify;
+}
+
+.side {
+  background-color: #C8C4C3;
+}
+
+.side hr {
+  height: 1px;
+  border: 0;
+  margin-left:0;
+  background-color: #AAAAAB;
+}
+
+.main {
+  background-color: #EAE8EB;
+}
+
+.main hr {
+  height: 1px;
+  border: 1;
+  margin-left:0;
+  background-color: #AAAAAB;
+}
+
+.content li {
+  list-style-type: none;
+  margin-top: 10px;
+}
+
+.card-image {
+  background-image: url("./image/a.jpeg");
+  background-size: cover;
+  filter: grayscale(100%);
+}
+
+.education-describe-1 {
+  padding-top: 10px;
+}
+
+.icon-address {
+  vertical-align: text-bottom;
+}
+
+.icon-social {
+  vertical-align: text-bottom;
+}
+
+@media only screen and (min-device-width: 320px) {
+  .App {
+    flex-direction: column;
+    max-width: 100%;
+    font-size: small;
+  }
+
+  .side {
+    padding: 0 20px 0 20px;
+    text-align: center;
+  }
+
+  .side hr {
+    width: 25%;
+    margin: auto;
+  } 
+
+  .main h2 {
+    padding: 0 20px 0 20px;
+    text-align: center;
+  }
+
+  .main hr {
+    width: 25%;
+    margin: auto;
+  }
+
+  .content li {
+    padding: 0 40px 0 40px;
+  }
+
+  .social-info {
+    padding: 0 20px 0 20px;
+    text-align: center;
+  }
+
+  .card-image {
+    position: relative;
+    width: 5cm;
+    height: 7cm;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+@media (min-device-width: 600px) and (max-device-width: 1024px) {
+  .App {
+    font-size: large;
+  }
+}
+
+@media only screen and (min-device-width: 1025px) {
+  .App {
+    flex-direction: row;
+    width: 21cm;
+    min-height: 29.7cm;
+    margin: 1cm auto;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    font-size: medium;
+  }
+
+  .side {
+    width: 25%;
+    padding: 10px 40px 0 40px;
+    text-align: left;
+  }
+
+  .side hr {
+    width: 20px;
+    margin-left: 0px;
+  }
+
+  .address-info {
+    padding-top: 20px;
+  }
+
+  .icon-address {
+    margin-right: 2px;
+  }
+
+  .education-info {
+    padding-top: 28px;
+  }
+
+  .main h2 {
+    padding: 10px 40px 0 40px;
+    text-align: left;
+  }
+  
+  .main hr {
+    width: 140px;
+    margin-left: 0px;
+  }
+
+  .content li {
+    padding: 10px 40px 0 40px;
+  }
+
+  .social-info {
+    position: relative;
+    text-align: left;
+    top: 162px;
+    left: 235px;
+  }
+
+  .card-image {
+    position: absolute;
+    width: 5cm;
+    height: 7cm;
+  }
+
+  .career-goal {
+    margin-top: 6cm;
+  }
+}
